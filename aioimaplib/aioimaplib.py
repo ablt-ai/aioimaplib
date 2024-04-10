@@ -76,7 +76,7 @@ Commands = {
     'LOGOUT':       Cmd('LOGOUT',       (NONAUTH, AUTH, LOGOUT, SELECTED), Exec.is_sync),
     'LSUB':         Cmd('LSUB',         (AUTH, SELECTED),           Exec.is_async),
     'MYRIGHTS':     Cmd('MYRIGHTS',     (AUTH, SELECTED),           Exec.is_async),
-    'MOVE':         Cmd('MOVE',         (SELECTED,),                Exec.is_sync),
+    'MOVE':         Cmd('MOVE',         (SELECTED,),                Exec.is_async),
     'NAMESPACE':    Cmd('NAMESPACE',    (AUTH, SELECTED),           Exec.is_async),
     'NOOP':         Cmd('NOOP',         (NONAUTH, AUTH, SELECTED),  Exec.is_async),
     'RENAME':       Cmd('RENAME',       (AUTH, SELECTED),           Exec.is_async),
