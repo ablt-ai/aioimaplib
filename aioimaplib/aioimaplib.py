@@ -648,7 +648,7 @@ class IMAP4ClientProtocol(asyncio.Protocol):
                 if command is not None:
                     command.append_to_resp(line)
                 else:
-                    log.info('ignored untagged response : %s' % line)
+                    log.debug('ignored untagged response : %s' % line)
         return command
 
     def _response_done(self, line: bytes) -> None:
